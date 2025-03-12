@@ -1,0 +1,53 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Virtual environment folders
+venv/
+env/
+pipenv/
+Pipfile.lock
+
+# IDE/editor folders and files
+.vscode/
+.idea/
+
+# Docker files
+docker-compose.override.yml
+.docker/
+docker-compose.yml
+
+# Test results
+*.log
+*.coverage
+*.tox
+*.nox
+*.coverage.*
+
+# Python packaging
+*.egg
+*.egg-info
+dist/
+build/
+eggs/
+parts/
+sdist/
+wheels/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Pipenv files (optional, if you don't want to track them)
+*.lock
+Pipfile.lock
+
+# .env or any environment variable files
+.env
+
+# Redis data
+data/
+
+# Other files/folders you might not want to track
+*.bak
+*.swp
