@@ -21,8 +21,11 @@ COPY Pipfile Pipfile.lock /app/
 # Install dependencies using pipenv (from Pipfile.lock)
 RUN pipenv install --deploy --ignore-pipfile
 
-# Copy the application code into the container
+# Copy the application code into the container (after installing dependencies)
 COPY ./app /app
+
+# # Run Alembic migrations
+# RUN pipenv run alembic upgrade head
 
 # Expose the FastAPI port
 EXPOSE 8000
